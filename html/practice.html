@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <style>
+        ul li ul li:nth-child(1) {
+            color: red;
+        }
+        div span {
+            color: blue;
+        }
+        /* the > symbol, means that it is a direct child, so that's why merry christmas is green */
+        /* because merry christmas's span, is a direct child of the div  */
+        div > span {
+            color: green;
+        }
+    </style>
+    <body>
+        <ul class="myList">
+            <li>One</li>
+            <li>Two</li>
+            <li>
+                <ul>
+                    <li>3A</li>
+                    <li>3B</li>
+                </ul>
+            </li>
+            <li>Four</li>
+        </ul>
+        <div>
+            <p>
+                <span>ho ho ho </span>
+            </p>
+        </div>
+        <div><span>merry christmas</span></div>
+    </body>
+</html>
+<!-- 1. write a css selector to select only the inner two li's-->
+<!-- .myList ul li  -->
+<!-- ul li ul li-->
+<!-- li ul li -->
+<!-- 2. write a css selector to select only the 1st li of the inner two li's  -->
+<!-- ul li ul li:first-child -->
+<!-- ul li ul li:nth-child(1) -->
+<!-- 3. what is the difference between an id and a class? -->
+<!-- an id is a unique identifier, only pertaining to that one specific element, has higher specficity -->
+<!-- a class can be assigned to multiple elements -->
+<!-- 4. is it possible to change the location of an element in css -->
+<!-- yes, you can with position and float -->
+<!-- difference between position and float: both of them take the elements out of the page flow, 
+     position: requires a parent element to be set to relative or absolute for it to work
+     float: requires a parent element to have clearfix applied, overflow:hidden, or to be floated itself -->
+<!-- 5. what does the box-modal refer to? -->
+<!-- refers to the elements' size including the border, margins, padding etc is calculated -->
+<!-- 6. is there a way to change the box modal? -->
+<!-- default is content-box, it adds the border ,margins and padding, to the set width and height of the element -->
+<!-- 7. differenece between these 3 selectors?  -->
+<!-- <style>
+    /* element of div*/
+    div { 
+        background: red;
+    }
+    /* class */
+    .div { 
+        background: blue; 
+    }
+    /* id */
+    #div { 
+        background: green;
+    }
+    </style> -->
+<!-- 8. given this css, what would this html look like? -->
+<!-- <style>
+    div span { 
+        color: red; 
+    }
+    div > span { 
+        background: green;
+    }
+    </style>  -->

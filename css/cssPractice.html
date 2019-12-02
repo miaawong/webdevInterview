@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>CSS</title>
+    </head>
+    <style>
+        span {
+            margin: 500px 100px;
+            padding: 500px 200px;
+            border: 2px solid grey;
+        }
+        .test {
+            width: 50px;
+            height: 50px;
+            background: red;
+
+            /* position: relative; */
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+        .others {
+            width: 50px;
+            height: 50px;
+            background: grey;
+        }
+        p:nth-of-type(2n + 1) {
+            color: green;
+        }
+        .group div { 
+            width: 100px; 
+            height: 100px; 
+            border: 2px solid red; 
+        }
+        .floated{ 
+        float: right;
+           clear:both;
+        }
+    </style>
+    <body>
+        <div class="others">hi</div>
+        <div class="test">hello</div>
+        <div class="others">hey</div>
+        <div
+            style="width: 100px; height: 100px; display: block; background: blue"
+        >
+            hello i am a block element
+        </div>
+        <p
+            style="display: inline-block; width: 100px; height: 100px; background: red;"
+        >
+            inline-block element
+        </p>
+        <p
+            style="display: inline; width: 100px; height: 100px; margin-top: 10px; background: grey; "
+        >
+            inline element
+        </p>
+        <p>paragraph</p>
+        <p>paragraph</p>
+        <p>paragraph</p>
+        <div class="group">
+            <div class="floated"> </div>
+            <div class="floated"> </div>
+            <div class="floated"> </div>
+    </body>
+</html>
