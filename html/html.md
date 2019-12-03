@@ -19,3 +19,20 @@ WHAT IS THE DIFFERENT BETWEEN BLOCK AND INLINE ELEMENTS?
     - async attribute downloads the script during parsing but will pause the parser to execute the script before it has been fully parsed
 4. What tools do you use for cross-browser testing?
     - BrowserShots is most common
+5. Difference between section, div, article ?
+    - <section> = group of content inside is related to a single theme 
+        - should appear as an entry in an outline of the page 
+        - a major part of the page
+    - <article> = an independent item section of content
+        - must have h1 tag for title 
+        - ex: forum post, article, blog entry, comment
+    - <div> = has no special meaning 
+        - can be used with the class, lang, title attributes to mark up semantics common to a group of consecutive element 
+        - div should be used as a last resort.
+
+-   section and article can be interchangeable. but just make sure it is logical and consistent
+
+6. to make link open in a new window...
+   target="\_blank"
+7. why would we want to use semantic tags?
+    - SEO, accessibility, repurposing, light code
